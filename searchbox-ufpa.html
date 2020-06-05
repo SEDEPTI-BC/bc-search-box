@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>UFPA | 2019-06-24</title>
+    <style></style>
+  </head>
+
+  <body>
+    <!--EBSCO CSS STARTS HERE-->
+    <link
+      rel="stylesheet"
+      href="//widgets.ebscohost.com/prod/customerspecific/s6962168/css/bootstrap.min.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/css/style-3.css" type="text/css" />
+
+    <!--
+===============================================================================================================
+START: DESKTOP SEARCH BOX   
+===============================================================================================================
+-->
+
+    <!--EBSCO CSS ENDS HERE-->
+
+    <div>
+      <div class="busca-integrada">
+        <div class="busca-integrada-content">
+          <ul class="nav nav-pills">
+            <li class="pills-item">
+              <a data-toggle="pill" href="#item1">
+                <span>Busca Integrada</span>
+              </a>
+            </li>
+            <li class="pills-item">
+              <a data-toggle="pill" href="#item2">
+                <span>Catálogo Online</span>
+              </a>
+            </li>
+            <li class="pills-item">
+              <a data-toggle="pill" href="#item3">
+                <span>RIUFPA - Repositório Institucional da UFPA</span>
+              </a>
+            </li>
+            <li class="pills-item">
+              <a data-toggle="pill" href="#item4">
+                <span>Publicações</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="tab-content">
+            <!--TAB 1 BUSCA INTEGRADA  STARTS HERE-->
+
+            <li id="item1" class="tab-pane fade in active">
+              <div class="form-group">
+                <h2 class="form-control">
+                  Pesquisa Integrada
+                </h2>
+              </div>
+
+              <div class="form-group">
+                <form
+                  id="searchformedsidDesktop"
+                  action="http://search.ebscohost.com/login.aspx"
+                  method="get"
+                  target="_blank"
+                  onsubmit="ebscoPreProcess(this);"
+                >
+                  <div class="select">
+                    <select
+                      name="search_prefix"
+                      class="botao-padrao"
+                      data-redirect="1"
+                      onchange="#"
+                      size="1"
+                    >
+                      <option data-alias="livre" selected="selected" value=""
+                        >livre</option
+                      >
+                      <option data-alias="assunto" value="SU ">assunto</option>
+                      <option data-alias="titulo" value="TI ">título</option>
+                      <option data-alias="autor" value="AU ">autor</option>
+                    </select>
+                  </div>
+
+                  <input name="direct" value="true" type="hidden" />
+                  <input name="authtype" value="ip,guest" type="hidden" />
+
+                  <input name="scope" value="site" type="hidden" />
+                  <input name="site" value="eds-live" type="hidden" />
+                  <input name="custid" value="s6649483" type="hidden" />
+                  <input name="groupid" value="main" type="hidden" />
+                  <input name="profile" value="eds" type="hidden" />
+                  <input name="cli0" value="FT" type="hidden" />
+                  <input name="clv0" value="N" type="hidden" />
+                  <input name="cli1" value="RV" type="hidden" />
+                  <input name="clv1" value="N" type="hidden" />
+                  <input name="cli2" value="FC" type="hidden" />
+                  <input name="clv2" value="N" type="hidden" />
+                  <input name="bquery" value="" type="hidden" />
+
+                  <div class="form-group">
+                    <input
+                      id="searchboxedsidDesktop"
+                      class="form-control"
+                      title="Realizar a busca"
+                      name="uquery"
+                      type="search"
+                      placeholder="Encontre artigos, livros, e-books, teses etc."
+                      aria-labelledby="field-search"
+                      aria-label="Realizar a busca"
+                      autocomplete="off"
+                      onkeyup="autocomp_eds(event)"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <button
+                      class="col-xs-12 col-sm-4 col-lg-2 botao-padrao-catalogo form-control"
+                      type="submit"
+                      aria-label="Realizar a busca"
+                    >
+                      pesquisar
+                    </button>
+                  </div>
+
+                  <div id="edsSearchWrapperDesktop" class="content-1"></div>
+
+                  <div class="rodape-content">
+                    <ul class="checkboxes-options">
+                      <li>
+                        <input
+                          id="box1_desktop_pesquisa_integrada"
+                          type="checkbox"
+                          value="texto-completo"
+                          name="fulltext_checkbox"
+                          onclick="limittoFullText(this.form)"
+                        />
+                        <label for="box1_desktop_pesquisa_integrada"
+                          >Texto completo</label
+                        >
+                      </li>
+
+                      <li>
+                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <a
+                          class="info-botao-footer-journals"
+                          title="Busca Avançada"
+                          href="http://search.ebscohost.com/login.aspx?authtype=ip,guest&custid=s6649483&groupid=main&profile=eds&direct=true&setup=1"
+                          target="_blank"
+                          >Busca Avançada</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <!--TAB 1 BUSCA INTEGRADA ENDS HERE-->
+
+            <!--TAB 2 CATÁLOGO ONLINE STARTS HERE-->
+            <li id="item2" class="col-xs-12 tab-pane fade">
+              <div class="col-sm-2 form-group">
+                <picture>
+                  <source srcset="" type="image/svg+xml" />
+                  <img
+                    src="//gss.ebscohost.com/kanthony/ufpa/img/Logotipo-Novo.png"
+                    class="img-fluid img-thumbnail"
+                    alt="..."
+                  />
+                </picture>
+              </div>
+              <div class="col-sm-8 form-group">
+                <h2 class="col-sm-8 form-control titulo">
+                  Catálogo Online
+                </h2>
+                <p class="col-sm-8 form-control desc">
+                  Pesquise no Catálogo da UFPA.
+                </p>
+              </div>
+
+              <div class="col-lg-12 form-group">
+                <form
+                  id="searchboxidcatalog"
+                  class="container-fluid"
+                  action="http://search.ebscohost.com/login.aspx"
+                  method="get"
+                  target="_blank"
+                  onsubmit="ebscoPreProcess(this);"
+                >
+                  <div class="select">
+                    <select
+                      name="search_prefix"
+                      class="botao-padrao"
+                      data-redirect="1"
+                      onchange="#"
+                      size="1"
+                    >
+                      <option data-alias="livre" selected="selected" value=""
+                        >livre</option
+                      >
+                      <option data-alias="assunto" value="SU ">assunto</option>
+                      <option data-alias="titulo" value="TI ">título</option>
+                      <option data-alias="autor" value="AU ">autor</option>
+                    </select>
+
+                    <input name="direct" value="true" type="hidden" />
+                    <input name="authtype" value="ip,guest" type="hidden" />
+
+                    <input name="scope" value="site" type="hidden" />
+                    <input name="site" value="eds-live" type="hidden" />
+                    <input name="custid" value="s6649483" type="hidden" />
+                    <input name="groupid" value="main" type="hidden" />
+                    <input name="profile" value="eds" type="hidden" />
+                    <input name="cli0" value="FT" type="hidden" />
+                    <input name="clv0" value="N" type="hidden" />
+                    <input name="cli1" value="RV" type="hidden" />
+                    <input name="clv1" value="N" type="hidden" />
+                    <input name="cli2" value="FC" type="hidden" />
+                    <input name="clv2" value="Y" type="hidden" />
+                    <input name="bquery" value="" type="hidden" />
+                  </div>
+                  <div class="col-sm-8 form-group">
+                    <input
+                      id="searchboxcatalogid"
+                      class="form-control buscador"
+                      title="Realizar a busca"
+                      name="uquery"
+                      type="search"
+                      placeholder="Pesquise no Catálogo da UFPA"
+                      aria-labelledby="field-search"
+                      aria-label="Realizar a busca"
+                      autocomplete="off"
+                      onkeyup="autocomp_catalog(event)"
+                    />
+                  </div>
+                  <div class="botao-inicial col-sm-2 form-group">
+                    <button
+                      class="col-xs-12 col-sm-4 col-lg-2 botao-padrao-catalogo form-control"
+                      type="submit"
+                      aria-label="Realizar a busca"
+                    >
+                      pesquisar<span class="fa fa-search-right"></span>
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div id="catalogSearchWrapper" class="content-3"></div>
+
+                  <div class="rodape-content">
+                    <ul class="checkboxes-options">
+                      <li>
+                        <span
+                          class="fa fa-calendar-check-o info-botao-footer"
+                        ></span>
+                        <a
+                          class="info-botao-footer"
+                          title="Ir para Renovação"
+                          href="http://bibcentral.ufpa.br/pergamum/biblioteca_s/php/login_usu.php?flag=index.php"
+                          target="_blank"
+                        >
+                          Renovação
+                        </a>
+                      </li>
+
+                      <li>
+                        <span class="fa fa-search-plus"></span>
+                        <a
+                          class="info-botao-footer-catalog"
+                          title="Acesso o catálogo"
+                          href="http://bibcentral.ufpa.br/pergamum/biblioteca/index.php"
+                          target="_blank"
+                          >Acesse o catálogo</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <!--TAB 2 CATÁLOGO ONLINE ENDS HERE-->
+
+            <!--TAB 3 PORTAL DE PERIÓDICOS STARTS HERE-->
+            <li id="item3" class="col-xs-12 tab-pane fade">
+              <div class="col-sm-2 form-group">
+                <picture>
+                  <source srcset="" type="image/svg+xml" />
+                  <img
+                    src="//gss.ebscohost.com/kanthony/ufpa/img/Logotipo-Novo.png"
+                    class="img-fluid img-thumbnail"
+                    alt="..."
+                  />
+                </picture>
+              </div>
+              <div class="col-sm-8 form-group">
+                <h2 class="col-sm-8 form-control titulo">
+                  RIUFPA - Repositório Institucional da UFPA
+                </h2>
+                <p class="col-sm-8 form-control desc">
+                  Pesquise no Repositório Institucional da UFPA.
+                </p>
+              </div>
+
+              <div class="col-lg-12 form-group">
+                <form
+                  id="searchboxidrepository"
+                  class="container-fluid"
+                  action="http://search.ebscohost.com/login.aspx"
+                  method="get"
+                  target="_blank"
+                  onsubmit="ebscoPreProcess(this);"
+                >
+                  <!--limittoCatalog(this,'pubsource-type');-->
+
+                  <div class="select">
+                    <select
+                      name="search_prefix"
+                      class="botao-padrao"
+                      data-redirect="1"
+                      onchange="#"
+                      size="1"
+                    >
+                      <option data-alias="livre" selected="selected" value=""
+                        >livre</option
+                      >
+                      <option data-alias="assunto" value="SU ">assunto</option>
+                      <option data-alias="titulo" value="TI ">título</option>
+                      <option data-alias="autor" value="AU ">autor</option>
+                    </select>
+                  </div>
+                  <input name="direct" value="true" type="hidden" />
+                  <input name="authtype" value="ip,guest" type="hidden" />
+
+                  <input name="scope" value="site" type="hidden" />
+                  <input name="site" value="eds-live" type="hidden" />
+                  <input name="custid" value="s6649483" type="hidden" />
+                  <input name="groupid" value="main" type="hidden" />
+                  <input name="profile" value="eds" type="hidden" />
+                  <input name="cli0" value="FT" type="hidden" />
+                  <input name="clv0" value="N" type="hidden" />
+                  <input name="cli1" value="RV" type="hidden" />
+                  <input name="clv1" value="N" type="hidden" />
+                  <input name="cli2" value="FC" type="hidden" />
+                  <input name="clv2" value="N" type="hidden" />
+                  <input name="cli3" value="FC1" type="hidden" />
+                  <input name="clv3" value="Y" type="hidden" />
+                  <input name="bquery" value="" type="hidden" />
+
+                  <div class="col-sm-8 form-group">
+                    <input
+                      id="searchboxrepositoryid"
+                      class="form-control buscador"
+                      title="Realizar a busca"
+                      name="uquery"
+                      type="search"
+                      placeholder="Pesquise no Portal Periódicos UFPA"
+                      aria-labelledby="field-search"
+                      aria-label="Realizar a busca"
+                      autocomplete="off"
+                      onkeyup="autocomp_repository(event)"
+                    />
+                  </div>
+                  <div class="botao-inicial col-sm-2 form-group">
+                    <button
+                      class="col-xs-12 col-sm-4 col-lg-2 botao-padrao-catalogo form-control"
+                      type="submit"
+                      aria-label="Realizar a busca"
+                    >
+                      pesquisar<span class="fa fa-search-right"></span>
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div id="repositorySearchWrapper" class="content-4"></div>
+
+                  <div class="rodape-content">
+                    <ul class="checkboxes-options">
+                      <li>
+                        <i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <a
+                          class="info-botao-footer-catalog"
+                          title="Acesse o Repositório"
+                          href="http://repositorio.ufpa.br/jspui/"
+                          target="_blank"
+                          >Acesse o Repositório</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </form>
+              </div>
+            </li>
+            <!--TAB 3 PORTAL DE PERIÓDICOS ENDS HERE-->
+
+            <!--TAB 4 BASES DE DADOS STARTS HERE-->
+            <li id="item4" class="col-xs-12 tab-pane fade">
+              <div class="col-sm-2 form-group">
+                <picture>
+                  <source srcset="" type="image/svg+xml" />
+                  <img
+                    src="//gss.ebscohost.com/kanthony/ufpa/img/Logotipo-Novo.png"
+                    class="img-fluid img-thumbnail"
+                    alt="..."
+                  />
+                </picture>
+              </div>
+              <div class="col-sm-8 form-group">
+                <h2 class="col-sm-8 form-control titulo">
+                  Base de Dados
+                </h2>
+                <p class="col-sm-8 form-control desc">
+                  Pesquise nas Bases de dados disponíveis na Biblioteca Digital
+                  da UFPA.
+                </p>
+              </div>
+
+              <div class="col-lg-12 form-group">
+                <form
+                  id="searchformholdingsid"
+                  class="container-fluid"
+                  action="http://search.ebscohost.com/login.aspx"
+                  method="get"
+                  target="_blank"
+                  onsubmit="ebscoPreProcess(this);"
+                >
+                  <div class="select">
+                    <select
+                      id="select1_desktop_pesquisa_integrada"
+                      name="search_prefix"
+                      class="botao-padrao"
+                      data-redirect="1"
+                      onchange="#"
+                      size="1"
+                    >
+                      <option data-alias="livre" selected="selected" value=""
+                        >livre</option
+                      >
+                      <option data-alias="assunto" value="SU ">assunto</option>
+                      <option data-alias="titulo" value="TI ">título</option>
+                      <option data-alias="autor" value="AU ">autor</option>
+                    </select>
+
+                    <input name="direct" value="true" type="hidden" />
+                    <input name="authtype" value="ip,guest" type="hidden" />
+
+                    <input name="scope" value="site" type="hidden" />
+                    <input name="site" value="eds-live" type="hidden" />
+                    <input name="custid" value="s6649483" type="hidden" />
+                    <input name="groupid" value="main" type="hidden" />
+                    <input name="profile" value="eds" type="hidden" />
+                    <input name="cli0" value="FT" type="hidden" />
+                    <input name="clv0" value="N" type="hidden" />
+                    <input name="cli1" value="RV" type="hidden" />
+                    <input name="clv1" value="N" type="hidden" />
+                    <input name="cli2" value="FC" type="hidden" />
+                    <input name="clv2" value="N" type="hidden" />
+                    <!-- Leads publication finder starts here-->
+                    <input name="db" value="edspub" type="hidden" />
+                    <input name="type" value="44" type="hidden" />
+                    <!-- Leads publication finder starts here-->
+
+                    <input name="bquery" value="" type="hidden" />
+                  </div>
+                  <div class="col-sm-8 form-group">
+                    <input
+                      id="searchboxholdingsid"
+                      class="form-control buscador"
+                      title="Realizar a busca"
+                      name="uquery"
+                      type="search"
+                      placeholder="Pesquise pelo título da obra"
+                      aria-labelledby="field-search"
+                      aria-label="Realizar a busca"
+                      autocomplete="off"
+                      onkeyup="autocomp(event)"
+                    />
+                  </div>
+
+                  <div class="botao-inicial col-sm-2 form-group">
+                    <button
+                      class="col-xs-12 col-sm-4 col-lg-2 botao-padrao-catalogo form-control"
+                      type="submit"
+                      aria-label="Realizar a busca"
+                    >
+                      pesquisar<span class="fa fa-search-right"></span>
+                      <i class="fa fa-search" aria-hidden="true"></i>
+                    </button>
+                  </div>
+                  <div id="holdingsSearchWrapper" class="content-2"></div>
+                </form>
+                <!--AtoZ STARTS HERE-->
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+0*+OR+JN+1*+OR+JN+2*+OR+JN+3*+OR+JN+4*+OR+JN+5*+OR+JN+6*+OR+JN+7*+OR+JN+8*+OR+JN+9**"
+                      target="_blank"
+                      >0-9</a
+                    >
+                  </button>
+
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+A*"
+                      target="_blank"
+                      >A</a
+                    >
+                  </button>
+
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+B*"
+                      target="_blank"
+                      >B</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+C*"
+                      target="_blank"
+                      >C</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+D*"
+                      target="_blank"
+                      >D</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+E*"
+                      target="_blank"
+                      >E</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+F*"
+                      target="_blank"
+                      >F</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+G*"
+                      target="_blank"
+                      >G</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+H*"
+                      target="_blank"
+                      >H</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+I*"
+                      target="_blank"
+                      >I</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+J*"
+                      target="_blank"
+                      >J</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+K*"
+                      target="_blank"
+                      >K</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+L*"
+                      target="_blank"
+                      >L</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+M*"
+                      target="_blank"
+                      >M</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+N*"
+                      target="_blank"
+                      >N</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+O*"
+                      target="_blank"
+                      >O</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+P*"
+                      target="_blank"
+                      >P</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+Q*"
+                      target="_blank"
+                      >Q</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+R*"
+                      target="_blank"
+                      >R</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+S*"
+                      target="_blank"
+                      >S</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+T*"
+                      target="_blank"
+                      >T</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+U*"
+                      target="_blank"
+                      >U</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+V*"
+                      target="_blank"
+                      >V</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+W*"
+                      target="_blank"
+                      >W</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+X*"
+                      target="_blank"
+                      >X</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+Y*"
+                      target="_blank"
+                      >Y</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+Z*"
+                      target="_blank"
+                      >Z</a
+                    >
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <a
+                      class="color-atoz"
+                      href="http://search.ebscohost.com/login.aspx?direct=true&site=eds-live&scope=site&type=44&db=edspub&custid=s6649483&groupid=main&profile=eds&mode=and&authtype=ip,guest&bquery=JN+*+NOT+JN+0*+NOT+JN+1*+NOT+JN+2*+NOT+JN+3*+NOT+JN+4*+NOT+JN+5*+NOT+JN+6*+NOT+JN+7*+NOT+JN+8*+NOT+JN+9*+NOT+JN+A*+NOT+JN+B*+NOT+JN+C*+NOT+JN+D*+NOT+JN+E*+NOT+JN+F*+NOT+JN+G*+NOT+JN+H*+NOT+JN+I*+NOT+JN+J*+NOT+JN+K*+NOT+JN+L*+NOT+JN+M*+NOT+JN+N*+NOT+JN+O*+NOT+JN+P*+NOT+JN+Q*+NOT+JN+R*+NOT+JN+S*+NOT+JN+T*+NOT+JN+U*+NOT+JN+V*+NOT+JN+W*+NOT+JN+X*+NOT+JN+Y*+NOT+JN+Z*"
+                      target="_blank"
+                      >Autores</a
+                    >
+                  </button>
+                </div>
+                <!--AtoZ ENDS HERE-->
+              </div>
+            </li>
+            <!--TAB 4 BASES DE DADOS ENDS HERE-->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--
+    ===============================================================================================================
+    END: DESKTOP SEARCH BOX
+    ===============================================================================================================
+-->
+
+    <!--EBSCO JS STARTS HERE-->
+    <!--JQUERY IF YOU DON'T HAVE-->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/FormProcessing.js"></script>
+    <script type="text/javascript" src="js/ebscohostsearch.js"></script>
+    <script type="text/javascript" src="js/catalog-functions.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/form-action.js"></script>
+    <script type="text/javascript" src="js/autocomp_eds.js"></script>
+    <script type="text/javascript" src="js/autocomp_catalog.js"></script>
+    <script type="text/javascript" src="js/autocomp_repository.js"></script>
+    <script type="text/javascript" src="js/autocomp_publications.js"></script>
+    <script type="text/javascript" src="js/autocomp_eds_mobile.js"></script>
+    <script type="text/javascript" src="js/autocomp_catalog_mobile.js"></script>
+    <script
+      type="text/javascript"
+      src="js/autocomp_repository_mobile.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="js/autocomp_publications_mobile.js"
+    ></script>
+    <!--EBSCO JS ENDS HERE-->
+    <!--NEW EDS SEARCHBOX ENDS HERE-->
+  </body>
+</html>
