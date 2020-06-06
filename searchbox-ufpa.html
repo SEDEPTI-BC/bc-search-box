@@ -27,28 +27,32 @@ START: DESKTOP SEARCH BOX
     <!--EBSCO CSS ENDS HERE-->
 
     <div class="wrapper">
-      <ul class="nav">
-        <li class="pills-item">
-          <a data-toggle="pill" href="#item1">
-            <span>Busca Integrada</span>
-          </a>
-        </li>
-        <li class="pills-item">
-          <a data-toggle="pill" href="#item2">
-            <span>Catálogo Online</span>
-          </a>
-        </li>
-        <li class="pills-item">
-          <a data-toggle="pill" href="#item3">
-            <span>RIUFPA - Repositório Institucional da UFPA</span>
-          </a>
-        </li>
-        <li class="pills-item">
-          <a data-toggle="pill" href="#item4">
-            <span>Publicações</span>
-          </a>
-        </li>
-      </ul>
+      <div>
+        <ul class="nav">
+          <li class="pills-item">
+            <a data-toggle="pill" href="#item1">
+              <span>Busca Integrada</span>
+            </a>
+          </li>
+          <li class="pills-item">
+            <a data-toggle="pill" href="#item2">
+              <span>Catálogo Online</span>
+            </a>
+          </li>
+          <li class="pills-item" title="Repositório Institucional da UFPA">
+            <a data-toggle="pill" href="#item3">
+              <!-- <span>RIUFPA - Repositório Institucional da UFPA</span> -->
+              <span>RIUFPA</span>
+            </a>
+          </li>
+          <li class="pills-item">
+            <a data-toggle="pill" href="#item4">
+              <span>Publicações</span>
+            </a>
+          </li>
+        </ul>
+        <div class="nav-bar-down"></div>
+      </div>
 
       <ul class="tab-content">
         <!--TAB 1 BUSCA INTEGRADA  STARTS HERE-->
@@ -174,7 +178,7 @@ START: DESKTOP SEARCH BOX
                 Catálogo Online
               </h2>
 
-              <div class="select" >
+              <div class="select">
                 <select
                   name="search_prefix"
                   class="botao-padrao"
