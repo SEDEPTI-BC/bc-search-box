@@ -1,8 +1,33 @@
-.wrapper a,
-.wrapper h1,
-.wrapper h2 {
-  color: white;
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 5px;
 }
+
+.nav-bar-down {
+  margin: 0 6px;
+  background-color: #4b2034;
+  height: 7px;
+}
+
+.pills-item {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  background: #742f4e;
+  margin: 1px 1px;
+}
+
+ul.nav li.pills-item a {
+  height: 100%;
+}
+
+ul.nav li.pills-item a:hover,
+ul.nav li.pills-item a:focus {
+  background-color: #4b2034;
+}
+
 .rodape-content {
   display: flex;
   flex-direction: row-reverse;
@@ -32,4 +57,29 @@
 .wrapper {
   background: #341324;
   padding: 10px 0 20px 0;
+}
+
+.wrapper a,
+.wrapper h1,
+.wrapper h2 {
+  color: white;
+}
+
+.wrapper ul li {
+  margin: 0 1px;
+}
+
+@media screen and (max-width: 500px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .wrapper ul li {
+    margin: 1px 1px;
+  }
+
+  .nav-bar-down {
+    display: none;
+  }
 }
