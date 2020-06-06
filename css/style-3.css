@@ -1,0 +1,35 @@
+.wrapper a,
+.wrapper h1,
+.wrapper h2 {
+  color: white;
+}
+.rodape-content {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.rodape-content li {
+  margin: 0 10px;
+}
+
+.search-field {
+  display: inline;
+}
+
+.select {
+  display: inline;
+}
+
+.titulo {
+  display: inline;
+}
+
+.tab-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  background: #341324;
+  padding: 10px 0 20px 0;
+}
