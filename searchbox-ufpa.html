@@ -178,61 +178,56 @@ START: DESKTOP SEARCH BOX
                 Catálogo Online
               </h2>
 
-              <div class="select">
-                <select
-                  name="search_prefix"
-                  class="botao-padrao"
-                  data-redirect="1"
-                  onchange="#"
-                  size="1"
+              <select
+                name="search_prefix"
+                class="select"
+                data-redirect="1"
+                onchange="#"
+                size="1"
+              >
+                <option data-alias="livre" selected="selected" value=""
+                  >Livre</option
                 >
-                  <option data-alias="livre" selected="selected" value=""
-                    >livre</option
-                  >
-                  <option data-alias="assunto" value="SU ">assunto</option>
-                  <option data-alias="titulo" value="TI ">título</option>
-                  <option data-alias="autor" value="AU ">autor</option>
-                </select>
+                <option data-alias="assunto" value="SU ">Assunto</option>
+                <option data-alias="titulo" value="TI ">Título</option>
+                <option data-alias="autor" value="AU ">Autor</option>
+              </select>
 
-                <input name="direct" value="true" type="hidden" />
-                <input name="authtype" value="ip,guest" type="hidden" />
+              <input name="direct" value="true" type="hidden" />
+              <input name="authtype" value="ip,guest" type="hidden" />
 
-                <input name="scope" value="site" type="hidden" />
-                <input name="site" value="eds-live" type="hidden" />
-                <input name="custid" value="s6649483" type="hidden" />
-                <input name="groupid" value="main" type="hidden" />
-                <input name="profile" value="eds" type="hidden" />
-                <input name="cli0" value="FT" type="hidden" />
-                <input name="clv0" value="N" type="hidden" />
-                <input name="cli1" value="RV" type="hidden" />
-                <input name="clv1" value="N" type="hidden" />
-                <input name="cli2" value="FC" type="hidden" />
-                <input name="clv2" value="Y" type="hidden" />
-                <input name="bquery" value="" type="hidden" />
-              </div>
+              <input name="scope" value="site" type="hidden" />
+              <input name="site" value="eds-live" type="hidden" />
+              <input name="custid" value="s6649483" type="hidden" />
+              <input name="groupid" value="main" type="hidden" />
+              <input name="profile" value="eds" type="hidden" />
+              <input name="cli0" value="FT" type="hidden" />
+              <input name="clv0" value="N" type="hidden" />
+              <input name="cli1" value="RV" type="hidden" />
+              <input name="clv1" value="N" type="hidden" />
+              <input name="cli2" value="FC" type="hidden" />
+              <input name="clv2" value="Y" type="hidden" />
+              <input name="bquery" value="" type="hidden" />
 
-              <div class="search-field">
-                <input
-                  id="searchboxcatalogid"
-                  class="buscador"
-                  title="Realizar a busca"
-                  name="uquery"
-                  type="search"
-                  placeholder="Pesquise no Catálogo da UFPA"
-                  aria-labelledby="field-search"
-                  aria-label="Realizar a busca"
-                  autocomplete="off"
-                  onkeyup="autocomp_catalog(event)"
-                />
-              </div>
+              <input
+                id="searchboxcatalogid"
+                class="buscador"
+                title="Realizar a busca"
+                name="uquery"
+                type="search"
+                placeholder="Pesquise no Catálogo da UFPA"
+                aria-labelledby="field-search"
+                aria-label="Realizar a busca"
+                autocomplete="off"
+                onkeyup="autocomp_catalog(event)"
+              />
 
               <button
                 class="botao-buscar"
                 type="submit"
                 aria-label="Realizar a busca"
               >
-                pesquisar
-                <i class="fa fa-search" aria-hidden="true"></i>
+                Pesquisar
               </button>
             </div>
 
